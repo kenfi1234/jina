@@ -1,0 +1,11 @@
+try:
+    q=int(input())
+    a=[]
+    for i in range(q):
+        e=list(map(int,input().split()))
+        d=e[0]%e[1]
+        a.append(d)
+    for j in a:
+        print(j)
+except EOFError:
+    pass
