@@ -1,0 +1,21 @@
+try:
+    q = int(input())
+    a = list(map(int, input().split()))
+    s = 0
+    for i in range(q):
+        n = len(a)
+        if n == 4:
+            s += a[2] * a[3] + a[1]
+            del a[2]
+        if n == 3:
+            s += a[1] * a[2] + a[0]
+            del a[1]
+        if n == 2:
+            s += a[0] * a[1]
+            del a[0]
+        if n == 1:
+            s += a[0]
+            del a[0]
+    print(s)
+except EOFError:
+    pass
